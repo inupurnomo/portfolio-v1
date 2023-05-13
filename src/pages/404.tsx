@@ -1,27 +1,18 @@
 import Head from "next/head";
-import Navbar from "./components/Navbar";
 import LeftSide from "./components/LeftSide";
 import RightSide from "./components/RightSide";
 import {motion} from "framer-motion";
-import Project from "./components/Project";
-import Banner from "./components/Banner";
-import About from "./components/About";
-import Experience from "./components/Experience";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Archive from "./components/Archive";
-import Education from "./components/Education";
-import BackToTop from "./components/part/BackToTop";
+import Page404 from "./components/Page404";
 
-export default function Home() {
+export default function Custom404() {
   return (
     <>
       <Head>
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="description" content="I am Ilham Ibnu Purnomo, " />
+        <meta name="description" content="Page Not Found" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>INUPURNOMO</title>
+        <title>Page Not Found | INUPURNOMO</title>
 
         {/*
           - favicon
@@ -32,7 +23,6 @@ export default function Home() {
           type="image/x-icon"
         />
       </Head>
-      <Navbar />
       <main className="w-full overflow-x-hidden overflow-y-hidden font-bodyFont text-textDark dark:text-textLight">
         <div className="w-full items-center justify-between gap-20 xl:flex">
           <motion.div
@@ -44,15 +34,7 @@ export default function Home() {
             <LeftSide />
           </motion.div>
           <div className="mx-auto w-full">
-            <Banner />
-            <About />
-            <Experience />
-            <Education />
-            <Project />
-            <Archive />
-            <Contact />
-            <Footer />
-            <BackToTop />
+            <Page404 />
           </div>
           <motion.div
             initial={{opacity: 0}}
