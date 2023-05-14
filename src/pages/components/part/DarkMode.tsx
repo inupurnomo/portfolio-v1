@@ -22,7 +22,7 @@ export default function Button() {
       <DarkModeSwitch
         moonColor="black"
         sunColor="white"
-        checked={theme === "light" ? true : false}
+        checked={currentTheme === "light" ? true : false}
         onChange={() =>
           theme == "dark" ? setTheme("light") : setTheme("dark")
         }

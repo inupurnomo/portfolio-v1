@@ -5,6 +5,7 @@ import Link from "next/link";
 import {AiOutlinePhone, AiOutlineMail} from "react-icons/ai";
 import {MdOutlineSms} from "react-icons/md";
 import TextHover from "./part/TextHover";
+import {Personal} from "@/data";
 
 const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
   e.preventDefault();
@@ -41,7 +42,7 @@ export default function Banner() {
           transition={{duration: 0.5, delay: 0.7}}
           className="flex flex-col font-descFont text-4xl font-semibold mdl:text-6xl"
         >
-          Ilham Ibnu Purnomo.
+          {Personal.name}
           <span className="gap-2 lgl:mt-4">
             I’am a
             <div className="lg:4xl text-2xl text-textLink mdl:text-3xl">
@@ -58,7 +59,7 @@ export default function Banner() {
         >
           I’m a software engineer specializing in building (and occasionally
           designing) exceptional digital experiences. Currently, I’m focused on
-          building accessible, human-centered products.{" "}
+          building accessible, human-centered products.
           <Link href={"#about"} onClick={handleScroll}>
             <TextHover text="Who is this guy?" />
           </Link>

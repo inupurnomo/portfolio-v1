@@ -35,7 +35,7 @@ export default function Navbar() {
 
   return (
     <div className="pt fixed top-0 z-50 h-20 w-full bg-light1 bg-opacity-90 text-textDark shadow-navbarShadow backdrop-blur-md dark:bg-bodyDark dark:text-textLight lg:h-20">
-      <div className="mx-auto flex h-full w-full cursor-pointer items-center justify-between px-12 py-1 font-titleFont text-2xl">
+      <div className="mx-auto flex h-full w-full items-center justify-between px-12 py-1 font-titleFont text-2xl">
         <Link href={"/"}>
           <motion.div
             initial={{opacity: 0}}

@@ -19,7 +19,7 @@ export default function BackToTop() {
   return (
     <>
       <motion.button
-        className={`bg-black fixed bottom-5 right-5 p-3 hover:text-textPrimary rounded-md duration-300 ${scrollY > 500 ? "inline-block" : "hidden"}`}
+        className={`bg-textLink fixed bottom-5 right-5 p-3 hover:text-textPrimary rounded-md duration-300 ${scrollY > 500 ? "inline-block" : "hidden"}`}
         onClick={scrollToTop}
       >
         <svg

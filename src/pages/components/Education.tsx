@@ -1,5 +1,7 @@
 import {motion} from "framer-motion";
 import SectionTitle from "./part/SectionTitle";
+// import {data} from "./data"
+import { Personal } from "@/data";
 
 export default function Education() {
   return (
@@ -18,45 +20,25 @@ export default function Education() {
           Where I’ve Studied
         </motion.h2>
         <div className="flex w-full flex-col gap-4 pt-10 text-textLight mdl:flex-col">
-          <motion.div
-            initial={{y: -10, opacity: 0}}
-            whileInView={{y: 0, opacity: 1}}
-            transition={{duration: 0.5, delay: 0.2}}
-          >
-            <div className="group cursor-pointer rounded-md bg-dark3 p-8 transition-all duration-300 hover:translate-x-2">
-              <h1 className="text-2xl font-semibold text-textPrimary">
-                Telkom University
-              </h1>
-              <div>Informatic’s Engineering</div>
-              <div>2023</div>
-            </div>
-          </motion.div>
-          <motion.div
-            initial={{y: -10, opacity: 0}}
-            whileInView={{y: 0, opacity: 1}}
-            transition={{duration: 0.5, delay: 0.3}}
-          >
-            <div className="group cursor-pointer rounded-md bg-dark3 p-8 transition-all duration-300 hover:translate-x-2">
-              <h1 className="text-2xl font-semibold text-textPrimary">
-                Telkom University
-              </h1>
-              <div>Informatic’s Engineering</div>
-              <div>2023</div>
-            </div>
-          </motion.div>
-          <motion.div
-            initial={{y: -10, opacity: 0}}
-            whileInView={{y: 0, opacity: 1}}
-            transition={{duration: 0.5, delay: 0.4}}
-          >
-            <div className="group cursor-pointer rounded-md bg-dark3 p-8 transition-all duration-300 hover:translate-x-2">
-              <h1 className="text-2xl font-semibold text-textPrimary">
-                Telkom University
-              </h1>
-              <div>Informatic’s Engineering</div>
-              <div>2023</div>
-            </div>
-          </motion.div>
+          {Personal.School &&
+            Personal.School.map(function (edu) {
+              return (
+                <motion.div
+                key={edu.id}
+                  initial={{y: -10, opacity: 0}}
+                  whileInView={{y: 0, opacity: 1}}
+                  transition={{duration: 0.5, delay: 0.2}}
+                >
+                  <div className="group cursor-pointer rounded-md bg-dark3 p-8 transition-all duration-300 hover:translate-x-2">
+                    <h1 className="text-2xl font-semibold text-textPrimary">
+                      {edu.school}
+                    </h1>
+                    <div>{edu.major}</div>
+                    <div>{edu.graduate}</div>
+                  </div>
+                </motion.div>
+              );
+            })}
         </div>
       </div>
     </section>
