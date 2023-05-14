@@ -22,9 +22,9 @@ export default function Navbar() {
     // update the classname
     const links = document.querySelectorAll(".nav-link");
     links.forEach((link) => {
-      link.classList.remove("active");
+      link.classList.remove("text-textPrimary");
     });
-    e.currentTarget.classList.add("active");
+    e.currentTarget.classList.add("text-textPrimary");
   };
 
   function handleClick(e: any) {
@@ -34,7 +34,7 @@ export default function Navbar() {
   }
 
   return (
-    <div className="pt fixed top-0 z-50 h-20 w-full bg-light1 bg-opacity-90 text-textDark shadow-navbarShadow backdrop-blur-md dark:bg-bodyDark dark:text-textLight lg:h-20">
+    <div className="pt fixed top-0 z-50 h-20 w-full bg-light1 bg-opacity-30 text-textDark shadow-navbarShadow backdrop-blur-xl dark:bg-bodyDark dark:bg-opacity-30 dark:text-textLight">
       <div className="mx-auto flex h-full w-full items-center justify-between px-12 py-1 font-titleFont text-2xl">
         <Link href={"/"}>
           <motion.div
@@ -48,11 +48,10 @@ export default function Navbar() {
         </Link>
         <div className="hidden items-center gap-7 mdl:inline-flex">
           <ul className="flex gap-7 text-[13px]">
-
             <Link
               onClick={handleScroll}
               href="#about"
-              className="nav-link flex cursor-pointer items-center gap-1 font-medium duration-300 hover:text-textPrimary "
+              className="nav-link flex cursor-pointer items-center gap-1 font-medium duration-300 hover:text-textPrimary"
             >
               <motion.li
                 initial={{y: -10, opacity: 0}}
@@ -101,16 +100,12 @@ export default function Navbar() {
                 <span className="text-textPrimary">04.</span> Contact
               </motion.li>
             </Link>
-            <a
-              href="./resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="./resume.pdf" target="_blank" rel="noopener noreferrer">
               <motion.div
                 initial={{y: -10, opacity: 0}}
                 animate={{y: 0, opacity: 1}}
                 transition={{duration: 0.1, delay: 0.5}}
-                className="h-full flex flex-col justify-center"
+                className="flex h-full flex-col justify-center"
               >
                 <Button name="Resume" size="small" />
               </motion.div>

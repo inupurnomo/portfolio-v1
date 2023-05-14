@@ -26,8 +26,11 @@ export default function Banner() {
     loop: 0,
   });
   return (
-    <section id="home" className="bg-light1 px-12 dark:bg-bodyDark mdl:px-0">
-      <div className="mx-auto flex min-h-screen max-w-contentContainer flex-col content-center justify-center gap-4 py-10 mdl:px-24 lgl:gap-8 xl:px-4">
+    <section
+      id="home"
+      className="h-screen bg-light1 px-12 dark:bg-bodyDark mdl:px-0"
+    >
+      <div className="mx-auto flex h-full max-w-contentContainer flex-col content-center justify-center gap-4 py-10 mdl:px-24 lgl:gap-8 xl:px-4">
         <motion.h3
           initial={{y: 10, opacity: 0}}
           animate={{y: 0, opacity: 1}}
@@ -59,7 +62,7 @@ export default function Banner() {
         >
           I’m a software engineer specializing in building (and occasionally
           designing) exceptional digital experiences. Currently, I’m focused on
-          building accessible, human-centered products.
+          building accessible, human-centered products.{" "}
           <Link href={"#about"} onClick={handleScroll}>
             <TextHover text="Who is this guy?" />
           </Link>
@@ -74,7 +77,7 @@ export default function Banner() {
           </Link>
         </motion.div>
       </div>
-      <div className="relative flex items-center justify-center gap-1 px-7 py-7 text-xs mdl:bottom-20 mdl:right-14 mdl:justify-end">
+      <div className="absolute bottom-0 right-0 flex w-full items-center justify-center gap-1 px-16 py-16 text-xs mdl:justify-end">
         <motion.div
           initial={{y: 10, opacity: 0}}
           animate={{y: 0, opacity: 1}}

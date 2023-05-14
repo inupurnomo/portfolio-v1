@@ -1,15 +1,10 @@
 import {
   TbBrandCodepen,
-  TbBrandGithub,
-  TbBrandInstagram,
   TbBrandTwitter,
 } from "react-icons/tb";
 import {
-  SlSocialYoutube,
   SlSocialLinkedin,
-  SlSocialFacebook,
   SlSocialInstagram,
-  SlSocialTwitter,
   SlSocialGithub,
 } from "react-icons/sl";
 

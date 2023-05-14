@@ -51,7 +51,7 @@ module.exports = {
         // textGreen: "#64ffda",
         // textLight: "#ccd6f6",
         // textDark: "#8892b0",
-        hoverColor: "rgba(100,255,218,0.1)",
+        hoverColor: "rgba(115, 115, 115, 0.3)",
       },
     },
   },
