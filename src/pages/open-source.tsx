@@ -7,9 +7,10 @@ import {FaAngleDoubleLeft} from "react-icons/fa";
 import Link from "next/link";
 import RepoCard from "./components/part/RepoCard";
 import DarkMode from "./components/part/DarkMode";
+import { GITHUB_API_URL, GITHUB_USERNAME } from "@/data";
 
 export const getStaticProps = async () => {
-  const res = await fetch(`https://api.github.com/users/inupurnomo/repos`);
+  const res = await fetch(`${GITHUB_API_URL}/users/${GITHUB_USERNAME}/repos`);
   let allAlbums = await res.json();
 
   return {

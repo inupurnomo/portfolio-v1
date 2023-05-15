@@ -1,32 +1,11 @@
-import proj1 from "../../public/assets/images/project-1.jpg"
-import proj2 from "../../public/assets/images/project-2.png"
-import proj3 from "../../public/assets/images/project-3.jpg"
+import {proj1, proj2, proj3} from "../../public/assets";
+import {socialMedia} from "./social";
 
 const Personal = {
   name: "Ilham Ibnu Purnomo",
+  desc: "I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products.",
   email: "contact@inupurnomo.com",
-  socialMedia: [
-    {
-      id: 1,
-      label: "Github",
-      url: "https://github.com/inupurnomo",
-    },
-    {
-      id: 2,
-      label: "Linkedin",
-      url: "https://www.linkedin.com/in/inupurnomo/",
-    },
-    {
-      id: 3,
-      label: "Dribbble",
-      url: "https://dribbble.com/inupurnomo",
-    },
-    {
-      id: 4,
-      label: "Email",
-      url: "mailto:contact@inupurnomo.com",
-    },
-  ],
+  phone: "+6281xxxxxxxx",
   School: [
     {
       id: 1,
@@ -49,7 +28,7 @@ const Personal = {
   ],
 };
 
-const Project = [
+const Projects = [
   {
     id: 1,
     title: "ReactBD",
@@ -83,4 +62,4 @@ const GITHUB_API_URL = "https://api.github.com";
 
 const GITHUB_USERNAME = "inupurnomo";
 
-export {Personal, Project, GITHUB_API_URL, GITHUB_USERNAME};
+export {Personal, Projects, GITHUB_API_URL, GITHUB_USERNAME, socialMedia};

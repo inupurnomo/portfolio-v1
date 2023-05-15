@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export default function Banner() {
   return (
-    <section className="flex h-screen bg-light1 px-12 dark:bg-bodyDark mdl:px-0">
-      <div className="mx-auto flex max-w-contentContainer flex-col content-center items-center justify-center gap-8 py-10 mdl:px-24 lgl:gap-8 xl:px-4">
+    <section className="h-screen bg-light1 px-12 dark:bg-bodyDark mdl:px-0">
+      <div className="mx-auto flex h-full max-w-contentContainer flex-col items-center justify-center gap-4 py-10 mdl:px-24 lgl:gap-8 xl:px-4">
         <motion.div
           initial={{y: 10, opacity: 0}}
           animate={{y: 0, opacity: 1}}
@@ -270,12 +270,11 @@ export default function Banner() {
             </defs>
           </svg>
         </motion.div>
-        <div></div>
         <motion.h2
           initial={{y: 10, opacity: 0}}
           animate={{y: 0, opacity: 1}}
           transition={{duration: 0.5, delay: 0.2}}
-          className="flex flex-col text-center font-descFont text-xl font-semibold mdl:text-2xl"
+          className="flex text-center font-descFont text-xl font-semibold mdl:text-2xl"
         >
           Sorry, We couldn't find what you are looking for!
         </motion.h2>

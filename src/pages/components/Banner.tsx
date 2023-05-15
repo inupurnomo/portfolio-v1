@@ -60,9 +60,7 @@ export default function Banner() {
           transition={{duration: 0.5, delay: 0.8}}
           className="mx:max-w-[650px] mb-12 text-base font-medium mdl:max-w-[600px] mdl:py-7"
         >
-          I’m a software engineer specializing in building (and occasionally
-          designing) exceptional digital experiences. Currently, I’m focused on
-          building accessible, human-centered products.{" "}
+          {Personal.desc} {" "}
           <Link href={"#about"} onClick={handleScroll}>
             <TextHover text="Who is this guy?" />
           </Link>
@@ -77,7 +75,7 @@ export default function Banner() {
           </Link>
         </motion.div>
       </div>
-      <div className="absolute bottom-0 right-0 flex w-full items-center justify-center gap-1 px-16 py-16 text-xs mdl:justify-end">
+      <div className="absolute bottom-0 right-0 z-00 flex w-full items-center justify-center gap-1 px-16 py-16 text-xs mdl:justify-end">
         <motion.div
           initial={{y: 10, opacity: 0}}
           animate={{y: 0, opacity: 1}}

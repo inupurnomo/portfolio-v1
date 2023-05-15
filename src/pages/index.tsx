@@ -39,7 +39,7 @@ export default function Home() {
             initial={{opacity: 0}}
             animate={{opacity: 1}}
             transition={{delay: 1.5}}
-            className="fixed bottom-0 left-0 w-32 xl:inline-flex"
+            className="fixed bottom-0 left-0 z-50 w-32 xl:inline-flex"
           >
             <LeftSide />
           </motion.div>

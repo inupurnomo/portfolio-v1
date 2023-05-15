@@ -3,10 +3,9 @@ import SectionTitle from "./part/SectionTitle";
 import Image from "next/image";
 import {TbBrandGithub} from "react-icons/tb";
 import {RxOpenInNewWindow} from "react-icons/rx";
-import {Project} from "@/data";
-import {one, two, three} from "../../../public/assets";
+import {Projects} from "@/data";
 
-export default function Work() {
+export default function Project() {
   return (
     <section
       id="projects"
@@ -15,8 +14,8 @@ export default function Work() {
       <div className="mx-auto flex max-w-contentContainer flex-col content-center justify-center gap-4 py-10 mdl:px-24 lgl:gap-8 xl:px-4">
         <SectionTitle title="Some Things I've Built" titleNo="03" />
         <div className="flex w-full flex-col items-center justify-between text-textLight mdl:text-textDark dark:mdl:text-textLight">
-          {Project &&
-            Project.map(function (proj) {
+          {Projects &&
+            Projects.map(function (proj) {
               return (
                 <motion.div
                   key={proj.id}
