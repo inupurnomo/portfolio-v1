@@ -5,7 +5,7 @@ const Personal = {
   name: "Ilham Ibnu Purnomo",
   desc: "I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products.",
   email: "contact@inupurnomo.com",
-  phone: "+6281xxxxxxxx",
+  phone: "6285155343147",
   School: [
     {
       id: 1,

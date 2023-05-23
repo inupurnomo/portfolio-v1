@@ -3,7 +3,7 @@ import Button from "./part/Button";
 import {useTypewriter, Cursor} from "react-simple-typewriter";
 import Link from "next/link";
 import {AiOutlinePhone, AiOutlineMail} from "react-icons/ai";
-import {MdOutlineSms} from "react-icons/md";
+import {MdOutlineWhatsapp} from "react-icons/md";
 import TextHover from "./part/TextHover";
 import {Personal} from "@/data";
 
@@ -60,7 +60,7 @@ export default function Banner() {
           transition={{duration: 0.5, delay: 0.8}}
           className="mx:max-w-[650px] mb-12 text-base font-medium mdl:max-w-[600px] mdl:py-7"
         >
-          {Personal.desc} {" "}
+          {Personal.desc}{" "}
           <Link href={"#about"} onClick={handleScroll}>
             <TextHover text="Who is this guy?" />
           </Link>
@@ -75,7 +75,7 @@ export default function Banner() {
           </Link>
         </motion.div>
       </div>
-      <div className="absolute bottom-0 right-0 z-00 flex w-full items-center justify-center gap-1 px-16 py-16 text-xs mdl:justify-end">
+      <div className="z-00 absolute bottom-0 right-0 flex w-full items-center justify-center gap-1 px-16 py-16 text-xs mdl:justify-end">
         <motion.div
           initial={{y: 10, opacity: 0}}
           animate={{y: 0, opacity: 1}}
@@ -83,7 +83,7 @@ export default function Banner() {
         >
           hire me :
         </motion.div>
-        <a href="mailto:contact@inupurnomo.com">
+        <a href={`mailto:${Personal.email}`}>
           <motion.div
             initial={{y: 10, opacity: 0}}
             animate={{y: 0, opacity: 1}}
@@ -93,7 +93,7 @@ export default function Banner() {
             <AiOutlineMail />
           </motion.div>
         </a>
-        <a href="#">
+        <a href={`tel:+${Personal.phone}`}>
           <motion.div
             initial={{y: 10, opacity: 0}}
             animate={{y: 0, opacity: 1}}
@@ -103,14 +103,18 @@ export default function Banner() {
             <AiOutlinePhone />
           </motion.div>
         </a>
-        <a href="#">
+        <a
+          href={`https://wa.me/${Personal.phone}?text=Hi+Pinuy!`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <motion.div
             initial={{y: 10, opacity: 0}}
             animate={{y: 0, opacity: 1}}
             transition={{duration: 0.5, delay: 1.3}}
             className="border border-textLink px-2 py-2 duration-300 hover:bg-hoverColor"
           >
-            <MdOutlineSms />
+            <MdOutlineWhatsapp />
           </motion.div>
         </a>
       </div>

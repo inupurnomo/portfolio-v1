@@ -50,7 +50,7 @@ export default function About() {
                 need to build a web app with the Spotify API using Node & React.
               </p>
               <br />
-              <h3 className="text-xl font-titleFont">Tech Stack:</h3>
+              <h3 className="font-titleFont text-xl">Tech Stack:</h3>
             </motion.div>
             <motion.div
               initial={{y: 10, opacity: 0}}
@@ -58,37 +58,37 @@ export default function About() {
               transition={{duration: 0.5, delay: 0.5}}
               className="mt-3 flex w-full flex-wrap gap-2 text-sm lg:px-5"
             >
-              <div className="flex transform cursor-default items-center gap-2 rounded-lg border-2 border-textPrimary px-3 py-3 transition-transform ease-in hover:scale-105 hover:shadow-lg">
+              <div className="flex transform cursor-pointer items-center gap-2 rounded-lg border-2 border-textPrimary px-3 py-3 transition-transform ease-in hover:scale-105 hover:shadow-lg">
                 <SiCss3 className="text-textPrimary" /> CSS3
               </div>
-              <div className="flex transform cursor-default items-center gap-2 rounded-lg border-2 border-textPrimary px-3 py-3 transition-transform ease-in hover:scale-105 hover:shadow-lg">
+              <div className="flex transform cursor-pointer items-center gap-2 rounded-lg border-2 border-textPrimary px-3 py-3 transition-transform ease-in hover:scale-105 hover:shadow-lg">
                 <SiHtml5 className="text-textPrimary" /> HTML5
               </div>
-              <div className="flex transform cursor-default items-center gap-2 rounded-lg border-2 border-textPrimary px-3 py-3 transition-transform ease-in hover:scale-105 hover:shadow-lg">
+              <div className="flex transform cursor-pointer items-center gap-2 rounded-lg border-2 border-textPrimary px-3 py-3 transition-transform ease-in hover:scale-105 hover:shadow-lg">
                 <SiJavascript className="text-textPrimary" /> JavaScript
               </div>
-              <div className="flex transform cursor-default items-center gap-2 rounded-lg border-2 border-textPrimary px-3 py-3 transition-transform ease-in hover:scale-105 hover:shadow-lg">
+              <div className="flex transform cursor-pointer items-center gap-2 rounded-lg border-2 border-textPrimary px-3 py-3 transition-transform ease-in hover:scale-105 hover:shadow-lg">
                 <SiMysql className="text-textPrimary" /> MySQL
               </div>
-              <div className="flex transform cursor-default items-center gap-2 rounded-lg border-2 border-textPrimary px-3 py-3 transition-transform ease-in hover:scale-105 hover:shadow-lg">
+              <div className="flex transform cursor-pointer items-center gap-2 rounded-lg border-2 border-textPrimary px-3 py-3 transition-transform ease-in hover:scale-105 hover:shadow-lg">
                 <SiNodedotjs className="text-textPrimary" /> NodeJs
               </div>
-              <div className="flex transform cursor-default items-center gap-2 rounded-lg border-2 border-textPrimary px-3 py-3 transition-transform ease-in hover:scale-105 hover:shadow-lg">
+              <div className="flex transform cursor-pointer items-center gap-2 rounded-lg border-2 border-textPrimary px-3 py-3 transition-transform ease-in hover:scale-105 hover:shadow-lg">
                 <SiPhp className="text-textPrimary" /> PHP
               </div>
-              <div className="flex transform cursor-default items-center gap-2 rounded-lg border-2 border-textPrimary px-3 py-3 transition-transform ease-in hover:scale-105 hover:shadow-lg">
+              <div className="flex transform cursor-pointer items-center gap-2 rounded-lg border-2 border-textPrimary px-3 py-3 transition-transform ease-in hover:scale-105 hover:shadow-lg">
                 <SiPostgresql className="text-textPrimary" /> PostgreSQL
               </div>
-              <div className="flex transform cursor-default items-center gap-2 rounded-lg border-2 border-textPrimary px-3 py-3 transition-transform ease-in hover:scale-105 hover:shadow-lg">
+              <div className="flex transform cursor-pointer items-center gap-2 rounded-lg border-2 border-textPrimary px-3 py-3 transition-transform ease-in hover:scale-105 hover:shadow-lg">
                 <SiTailwindcss className="text-textPrimary" /> Tailwindcss
               </div>
-              <div className="flex transform cursor-default items-center gap-2 rounded-lg border-2 border-textPrimary px-3 py-3 transition-transform ease-in hover:scale-105 hover:shadow-lg">
+              <div className="flex transform cursor-pointer items-center gap-2 rounded-lg border-2 border-textPrimary px-3 py-3 transition-transform ease-in hover:scale-105 hover:shadow-lg">
                 <SiNextdotjs className="text-textPrimary" /> NextJs
               </div>
-              <div className="flex transform cursor-default items-center gap-2 rounded-lg border-2 border-textPrimary px-3 py-3 transition-transform ease-in hover:scale-105 hover:shadow-lg">
+              <div className="flex transform cursor-pointer items-center gap-2 rounded-lg border-2 border-textPrimary px-3 py-3 transition-transform ease-in hover:scale-105 hover:shadow-lg">
                 <SiPython className="text-textPrimary" /> Python
               </div>
-              <div className="flex transform cursor-default items-center gap-2 rounded-lg border-2 border-textPrimary px-3 py-3 transition-transform ease-in hover:scale-105 hover:shadow-lg">
+              <div className="flex transform cursor-pointer items-center gap-2 rounded-lg border-2 border-textPrimary px-3 py-3 transition-transform ease-in hover:scale-105 hover:shadow-lg">
                 <SiLinux className="text-textPrimary" /> Linux
               </div>
             </motion.div>
@@ -100,7 +100,7 @@ export default function About() {
             className="group relative mx-auto flex h-full w-full items-center justify-center text-center mdl:w-1/3 "
           >
             <div>
-              <div className="relative z-20 flex transition-transform duration-300 group-hover:-translate-x-2 group-hover:-translate-y-2">
+              <div className="relative z-20 flex transition-transform duration-300 group-hover:-translate-x-1 group-hover:-translate-y-1">
                 <Image
                   className="h-full w-full rounded-lg"
                   src={profileImg}
@@ -110,7 +110,7 @@ export default function About() {
                 <div className="absolute left-0 top-0 h-full w-full rounded-md bg-textPrimary/60 duration-300 group-hover:bg-transparent lgl:inline-block"></div>
               </div>
             </div>
-            <div className="absolute left-2 top-2 h-full w-full rounded-md border-2 border-textPrimary transition-transform duration-300 group-hover:translate-x-2 group-hover:translate-y-2 lgl:inline-flex"></div>
+            <div className="absolute left-2 top-2 h-full w-full rounded-md border-2 border-textPrimary transition-transform duration-300 group-hover:translate-x-1 group-hover:translate-y-1 lgl:inline-flex"></div>
           </motion.div>
         </div>
       </div>

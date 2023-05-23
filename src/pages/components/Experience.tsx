@@ -57,7 +57,7 @@ export default function Experience() {
       <div className="mx-auto flex min-h-screen max-w-contentContainer flex-col content-center gap-4 px-0 py-10 mdl:px-28 lgl:gap-8 xl:px-52">
         <SectionTitle title="Where I've Worked" titleNo="02" />
         <div className="mb-10 mt-10 flex w-full flex-col gap-7 md:flex-row">
-          <ul className="flex flex-col md:w-32">
+          <ul className="flex w-full flex-row overflow-x-scroll scrollbar-thin scrollbar-thumb-gray-600 mdl:w-96 mdl:flex-col mdl:overflow-hidden">
             <motion.li
               initial={{y: -10, opacity: 0}}
               whileInView={{y: 0, opacity: 1}}
@@ -65,9 +65,9 @@ export default function Experience() {
               onClick={handleReactbd}
               className={`${
                 workReactbd
-                  ? "border-l-textPrimary text-textPrimary"
-                  : "border-l-textDark dark:border-l-textLight"
-              } cursor-pointer border-l-2 bg-transparent px-8 py-3 text-sm font-medium duration-300 hover:bg-hoverColor`}
+                  ? "border-t-textPrimary text-textPrimary mdl:border-t-0 mdl:border-l-textPrimary"
+                  : "border-t-textDark dark:border-l-textLight dark:border-t-textLight mdl:border-t-0 mdl:border-l-textDark"
+              } cursor-pointer border-t-2 bg-transparent px-8 py-3 text-sm font-medium duration-300 hover:bg-hoverColor mdl:border-l-2`}
             >
               ReactBD
             </motion.li>
@@ -78,9 +78,9 @@ export default function Experience() {
               onClick={handleGoogle}
               className={`${
                 workGoogle
-                  ? "border-l-textPrimary text-textPrimary"
-                  : "border-l-textDark dark:border-l-textLight"
-              } cursor-pointer border-l-2 bg-transparent px-8 py-3 text-sm font-medium duration-300 hover:bg-hoverColor`}
+                  ? "border-t-textPrimary text-textPrimary mdl:border-t-0 mdl:border-l-textPrimary"
+                  : "border-t-textDark dark:border-l-textLight dark:border-t-textLight mdl:border-t-0 mdl:border-l-textDark"
+              } cursor-pointer border-t-2 bg-transparent px-8 py-3 text-sm font-medium duration-300 hover:bg-hoverColor mdl:border-l-2`}
             >
               Google
             </motion.li>
@@ -91,9 +91,9 @@ export default function Experience() {
               onClick={handleApple}
               className={`${
                 workApple
-                  ? "border-l-textPrimary text-textPrimary"
-                  : "border-l-textDark dark:border-l-textLight"
-              } cursor-pointer border-l-2 bg-transparent px-8 py-3 text-sm font-medium duration-300 hover:bg-hoverColor`}
+                  ? "border-t-textPrimary text-textPrimary mdl:border-t-0 mdl:border-l-textPrimary"
+                  : "border-t-textDark dark:border-l-textLight dark:border-t-textLight mdl:border-t-0 mdl:border-l-textDark"
+              } cursor-pointer border-t-2 bg-transparent  px-8 py-3 text-sm font-medium duration-300 hover:bg-hoverColor mdl:border-l-2`}
             >
               Apple
             </motion.li>
@@ -104,9 +104,9 @@ export default function Experience() {
               onClick={handleSplash}
               className={`${
                 workSplash
-                  ? "border-l-textPrimary text-textPrimary"
-                  : "border-l-textDark dark:border-l-textLight"
-              } cursor-pointer border-l-2 bg-transparent px-8 py-3 text-sm font-medium duration-300 hover:bg-hoverColor`}
+                  ? "border-t-textPrimary text-textPrimary mdl:border-t-0 mdl:border-l-textPrimary"
+                  : "border-t-textDark dark:border-l-textLight dark:border-t-textLight mdl:border-t-0 mdl:border-l-textDark"
+              } cursor-pointer border-t-2 bg-transparent px-8 py-3 text-sm font-medium duration-300 hover:bg-hoverColor mdl:border-l-2`}
             >
               Splash
             </motion.li>
@@ -117,9 +117,9 @@ export default function Experience() {
               onClick={handleAmazon}
               className={`${
                 workAmazon
-                  ? "border-l-textPrimary text-textPrimary"
-                  : "border-l-textDark dark:border-l-textLight"
-              } cursor-pointer border-l-2 bg-transparent px-8 py-3 text-sm font-medium duration-300 hover:bg-hoverColor`}
+                  ? "border-t-textPrimary text-textPrimary mdl:border-t-0 mdl:border-l-textPrimary"
+                  : "border-t-textDark dark:border-l-textLight dark:border-t-textLight mdl:border-t-0 mdl:border-l-textDark"
+              } cursor-pointer border-t-2 bg-transparent px-8 py-3 text-sm font-medium duration-300 hover:bg-hoverColor mdl:border-l-2`}
             >
               Amazon
             </motion.li>

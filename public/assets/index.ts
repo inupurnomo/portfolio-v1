@@ -1,5 +1,5 @@
 import favicon from "./icons/favicon.ico";
-import logo from "./icons/icon-48x48.png";
+import logo from "./icons/icon-512x512.png";
 import profileImg from "./images/me.jpg";
 import proj1 from "./images/project-1.jpg";
 import proj2 from "./images/project-2.png";
