@@ -1,8 +1,17 @@
 {
   "name": "portfolio-v1",
   "version": "1.1.0",
+  "author": "Ilham Ibnu Purnomo <contact@inupurnomo.com>",
   "private": true,
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inupurnomo/portfolio-v1"
+  },
+  "keywords": [
+    "nextjs",
+    "portfolio"
+  ],
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

@@ -8,7 +8,7 @@ This is a My First Website Portfolio, built with Next.js and Tailwindcss
 
 This portfolio is open source, you can use it for free.\
 **But with attribution.**\
-Yes, you can fork this repo. Please give me proper credit by linking back to [inupurnomo.com](https://inupurnomo.com "INUPURNOMO"). Thanks!
+If you fork this repo, please give me proper credit by linking back to [inupurnomo.com](https://inupurnomo.com "INUPURNOMO"). Thanks!
 
 ## Installation
 
