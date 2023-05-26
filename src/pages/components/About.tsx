@@ -99,16 +99,14 @@ export default function About() {
             transition={{duration: 0.5, delay: 0.6}}
             className="group relative mx-auto flex h-full w-full items-center justify-center text-center mdl:w-1/3 "
           >
-            <div>
-              <div className="relative z-20 flex transition-transform duration-300 group-hover:-translate-x-1 group-hover:-translate-y-1">
-                <Image
-                  className="h-full w-full rounded-lg"
-                  src={profileImg}
-                  alt="profileImg"
-                  priority={true}
-                />
-                <div className="absolute left-0 top-0 h-full w-full rounded-md bg-textPrimary/60 duration-300 group-hover:bg-transparent lgl:inline-block"></div>
-              </div>
+            <div className="relative w-full z-20 flex transition-transform duration-300 group-hover:-translate-x-1 group-hover:-translate-y-1">
+              <Image
+                className="h-full w-full rounded-lg"
+                src={profileImg}
+                alt="profileImg"
+                priority={true}
+              />
+              <div className="absolute left-0 top-0 h-full w-full rounded-md bg-textPrimary/60 duration-300 group-hover:bg-transparent lgl:inline-block"></div>
             </div>
             <div className="absolute left-2 top-2 h-full w-full rounded-md border-2 border-textPrimary transition-transform duration-300 group-hover:translate-x-1 group-hover:translate-y-1 lgl:inline-flex"></div>
           </motion.div>
