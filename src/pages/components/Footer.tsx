@@ -11,7 +11,7 @@ export default function Footer() {
         className="flex flex-col items-center"
       >
         <div className="flex flex-row gap-1 py-7">
-          © {new Date().getFullYear()}
+          &copy; {new Date().getFullYear()}
           <Link
             href="https://inupurnomo.com"
             target="_blank"
