@@ -52,9 +52,9 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="bg-light2 text-textDark dark:bg-dark2 dark:text-textLight mdl:px-0"
+      className="bg-light2 px-6 text-textDark dark:bg-dark2 dark:text-textLight mdl:px-0"
     >
-      <div className="mx-auto flex min-h-screen max-w-contentContainer flex-col content-center gap-4 px-12 py-10 mdl:pl-28 mdl:pr-16 lg:pr-0 lgl:gap-8 xl:pl-52">
+      <div className="mx-auto flex min-h-screen max-w-contentContainer flex-col content-center gap-4 py-10 md:px-6 mdl:pl-28 mdl:pr-16 lg:pr-0 lgl:gap-8 xl:pl-52">
         <SectionTitle title="Where I've Worked" titleNo="02" />
         <div className="mb-10 mt-10 flex w-full flex-col mdl:flex-row">
           <div className="w-full mdl:w-1/5">

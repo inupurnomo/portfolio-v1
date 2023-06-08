@@ -24,7 +24,7 @@ export default function BackToTop() {
   return (
     <>
       <motion.button
-        className={`fixed bottom-5 right-5 rounded-full bg-textLink p-3 duration-300 hover:text-textPrimary ${
+        className={`z-20 fixed bottom-5 right-5 rounded-full bg-textLink p-3 duration-300 hover:text-textPrimary ${
           scrollY > 900 ? "inline-block" : "hidden"
         }`}
         onClick={scrollToTop}

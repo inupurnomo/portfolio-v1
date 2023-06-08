@@ -7,9 +7,9 @@ export default function Education() {
   return (
     <section
       id="education"
-      className="min-h-screen bg-light1 px-12 text-textDark dark:bg-dark1 dark:text-textLight mdl:px-0"
+      className="min-h-screen bg-light1 px-6 text-textDark dark:bg-dark1 dark:text-textLight mdl:px-0"
     >
-      <div className="mx-auto flex min-h-screen max-w-contentContainer flex-col content-center justify-center gap-2 mdl:px-24 lgl:gap-8 xl:px-4">
+      <div className="mx-auto flex min-h-screen max-w-contentContainer flex-col content-center justify-center gap-2 md:px-6 mdl:px-24 lgl:gap-8 xl:px-4">
         <SectionTitle title="Education" />
         <motion.h2
           initial={{opacity: 0}}
@@ -24,7 +24,7 @@ export default function Education() {
             Personal.School.map(function (edu) {
               return (
                 <motion.div
-                key={edu.id}
+                  key={edu.id}
                   initial={{y: -10, opacity: 0}}
                   whileInView={{y: 0, opacity: 1}}
                   transition={{duration: 0.5, delay: 0.2}}

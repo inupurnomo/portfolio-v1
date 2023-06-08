@@ -6,8 +6,8 @@ import Button from "./part/Button";
 export default function Archive() {
   const [showMore, setShowMore] = useState(false);
   return (
-    <section className="min-h-screen bg-light2 px-12 dark:bg-dark2 mdl:px-0">
-      <div className="mx-auto flex max-w-contentContainer flex-col content-center justify-center gap-4 py-10 mdl:px-24 lgl:gap-8 xl:px-4">
+    <section className="min-h-screen bg-light2 px-6 dark:bg-dark2 mdl:px-0">
+      <div className="mx-auto flex max-w-contentContainer flex-col content-center justify-center gap-4 py-10 md:px-6 mdl:px-24 lgl:gap-8 xl:px-4">
         <div className="flex w-full flex-col items-center">
           <h2 className="font-titleFont text-3xl font-semibold">
             Other Noteworthy Project

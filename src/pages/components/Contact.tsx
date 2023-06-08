@@ -4,13 +4,13 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="bg-light1 px-12 py-16 dark:bg-dark1 mdl:px-0"
+      className="bg-light1 px-6 py-16 dark:bg-dark1 mdl:px-0"
     >
       <motion.div
         initial={{y: 10, opacity: 0}}
         whileInView={{y: 0, opacity: 1}}
         transition={{duration: 0.5, delay: 0.1}}
-        className="mx-auto flex flex-col items-center justify-center gap-4 mdl:px-24 mdl:py-40 lgl:gap-8 xl:px-4"
+        className="mx-auto flex flex-col items-center justify-center gap-4 md:px-6 mdl:px-24 mdl:py-40 lgl:gap-8 xl:px-4"
       >
         <p className="flex items-center font-titleFont text-lg font-semibold tracking-wide text-textPrimary">
           04. What’s Next?

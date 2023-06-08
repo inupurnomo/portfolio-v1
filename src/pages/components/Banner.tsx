@@ -28,9 +28,9 @@ export default function Banner() {
   return (
     <section
       id="home"
-      className="h-screen bg-light1 px-12 dark:bg-bodyDark mdl:px-0"
+      className="h-screen bg-light1 px-6 dark:bg-bodyDark mdl:px-0"
     >
-      <div className="mx-auto flex h-full max-w-contentContainer flex-col content-center justify-center gap-4 py-10 mdl:px-24 lgl:gap-8 xl:px-4">
+      <div className="mx-auto flex h-full max-w-contentContainer flex-col content-center justify-center gap-4 py-10 md:px-6 mdl:px-24 lgl:gap-8 xl:px-4">
         <motion.h3
           initial={{y: 10, opacity: 0}}
           animate={{y: 0, opacity: 1}}
